@@ -3,9 +3,10 @@
   --soft-bg: #fff3d9;
   --btn-clr: #0c449e;
   --headings-clr: #13366d;
+  --txt-clr: #7e7e7e;
   --black: #000;
   --white: #fff;
 
-  --headings-font: "Karla", sans-serif;
+  --headings-font: 'Poppins', sans-serif;
   --main-font: "Roboto", sans-serif;
 }
