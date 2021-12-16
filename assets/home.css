@@ -10,6 +10,9 @@
 body {
   background-color: var(--bg-clr);
 }
+button {
+  cursor: pointer;
+}
 .center {
   text-align: center;
 }
@@ -134,13 +137,15 @@ header {
   color: var(--black);
   font-weight: bold;
 }
-
 /* pricing plans  */
 .plans,
 .plan {
   display: flex;
-  flex-direction: column;
   gap: 10px;
+  flex-direction: column;
+}
+.plans {
+  justify-content: center;
 }
 .plan {
   background: var(--soft-bg);
@@ -184,9 +189,111 @@ header {
 }
 .ads > * {
   margin-bottom: 15px;
-  color: var(--txt-clr)
+  color: var(--txt-clr);
 }
 .ads p:first-child {
-  color: var(--black)
+  color: var(--black);
 }
+.cont__txt {
+  line-height: 2;
+}
+@media screen and (min-width: 560px) {
+  main,
+header {
+  padding: 30px;
+}
+  .hero__mail {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hero__mail input {
+    width: 100%;
+  }
+  .hero__mail button {
+    width: 200px;
+    padding: 14px !important;
+  }
+  .plan,
+  .ads {
+    width: 100%;
+    max-width: 300px;
+  }
+  .plans {
+    align-items: center;
+  }
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  .signin {
+    background-color: transparent;
+    border: none;
+  }
+  .title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .pricing__txt {
+    text-align: center;
+  }
+  strong {
+    font-size: 18px;
+  }
+  .humberguer {
+    display: none;
+  }
+}
+@media screen and (min-width: 850px) {
+  .buttons,
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
 
+  .nav a {
+    justify-content: space-between;
+    color: var(--black);
+    text-decoration: none;
+    font-family: 600;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .hero__img {
+    order: 2;
+    max-width: 500px;
+  }
+  .hero__content {
+    max-width: 600px;
+  }
+  h2.title {
+    text-align: left;
+  }
+  h1.title {
+    text-align: left;
+  }
+  .pricing__txt {
+    text-align: left;
+    padding: 5px;
+  }
+  .plans {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .hero__offer {
+    flex-direction: row;
+  }
+  
+}
+@media only screen and (min-width: 1100px) {
+  .cards-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
