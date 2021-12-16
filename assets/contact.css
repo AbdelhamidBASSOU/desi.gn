@@ -1,26 +1,105 @@
 @import url(./vars.css);
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: var(--main-font);
+}
+body {
+  background-color: var(--bg-clr);
+}
 
 .hero-form {
   display: flex;
   justify-content: center;
 }
-input {
-  display: block;
+
+/* header  */
+header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media screen and (max-width: 400px) {
-  .first-section {
-    width: 75%;
-    margin: auto;
-  }
-  .first-section span {
-    display: block;
-    margin: auto;
-  }
-  .first-section h1 {
-    text-transform: capitalize;
-    font-size: 30px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
+.buttons,
+.nav {
+  display: none;
+}
+
+.humberguer {
+  width: 25px;
+}
+
+.humberguer span {
+  display: block;
+  height: 4px;
+  background-color: var(--headings-clr);
+  margin-bottom: 4px;
+}
+/*  end header  */
+
+.first-section {
+  text-align: center;
+  width: 75%;
+  margin: 20px auto;
+}
+
+.first-section h1 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: var(--headings-clr);
+  font-family: var(--main-font);
+}
+.first-section p {
+  font-size: 19px;
+  color: var(--grey);
+  margin: 10px;
+  font-family: var(--main-font);
+}
+.hero-form .form-info {
+  display: none;
+}
+.form-elements {
+  padding-bottom: 30px;
+}
+input {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  margin: 10px 0px 25px;
+  background-color: var(--soft-bg);
+  border-radius: 5px;
+  border: 1px solid var(--headings-clr);
+}
+textarea {
+  display: block;
+  padding: 10px;
+  width: 300px;
+  height: 150px;
+  margin: 10px 0px 25px;
+  background-color: var(--soft-bg);
+  border-radius: 5px;
+  border: 1px solid var(--headings-clr);
+}
+label {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-style: medium;
+  color: var(--grey);
+  margin-bottom: 5px;
+  font-family: var(--main-font);
+}
+
+button {
+  background-color: var(--orange);
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: var(--white);
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-transform: capitalize;
 }
