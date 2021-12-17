@@ -7,7 +7,9 @@
   font-family: var(--main-font);
 }
 body {
-  background-color: var(--bg-clr);
+  /* background-color: var(--bg-clr); */
+
+  background:linear-gradient(to top,var(--bg-clr) 0% , var(--bg-clr) 30% var(--soft-bg) 30%,var(--soft-bg)100%);
 }
 
 .hero-form {
@@ -102,4 +104,161 @@ button {
   border: none;
   text-align: center;
   text-transform: capitalize;
+}
+@media screen and (min-width:850px)
+{
+  body
+  {
+    background-image: linear-gradient(var(--hard-bg),var(--soft-bg),var(--soft-bg));
+  
+  }
+ 
+  .btn {
+    padding: 5px;
+    background-color: var(--btn-clr);
+    border: none;
+  width: 150px;
+    color: var(--white);
+
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px var(--headings-clr);
+  }
+  .buttons,
+  .nav {
+    display: flex;
+    gap: 20px;
+    
+  }
+  ul{
+    list-style: none;
+
+  }
+  .humberguer{
+    display: none;
+  }
+  .nav a{
+    justify-content: space-between;
+    color: var(--black);
+    font-family: 600;
+    text-decoration: none;
+
+  }
+    .signin{
+    background-color:transparent;
+    color: var(--grey);
+    border: none;
+    width: 90px;
+    padding: 15px;
+
+  }
+  .hero-form
+  {
+    /* display: flex; */
+    width: 80%;
+    margin: 50px auto;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+     
+  }
+  .hero-form .form-info {
+    flex-basis: 25%;
+    display: block;
+    background-color: var(--orange);
+    padding: 15px;
+    text-align: center;
+  }
+  .form-info h1,p
+  {
+    margin-top: 30px;
+    color: var(--white);
+    
+  }
+  .form-info p
+  {font-size: 22px;
+  }
+  .style-info
+  {
+    display: flex;
+    justify-content:left;
+    padding: 30px;
+    
+   
+  }
+  .style-info p
+  {
+font-size: 20px;
+margin-right: 100px;
+  }
+  
+
+  input {
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--grey);
+
+
+  }
+  i
+  {
+    color: white;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .first-form
+  {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .form-elements
+  {
+    flex-basis: 75%;
+    padding: 40px;
+    background-color: var(--bg-clr);
+
+  }
+  label
+  {
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+    
+  }
+
+  .first-form
+  {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20%;
+ 
+
+  }
+  #subject
+  {
+    width: 80%;
+      
+  }
+
+  #msg
+  {
+    
+    width:80%;
+    background-color: red;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--grey);
+    padding: 0;
+  }
+  button
+  {
+    width: 45%;
+  }
+
 }
